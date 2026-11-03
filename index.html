@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Amu 🌹</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=Dancing+Script:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="pre">
+  <!-- LOADER : stage curtains -->
+  <div id="loader" style="cursor: pointer;">
+    <div class="cur-valance"></div>
+    <div class="curtain cl"></div>
+    <div class="curtain cr"></div>
+    <div class="cur-center">
+      <div class="cur-rose" data-rose></div>
+      <div class="loader-text">Happy Birthday Amu</div>
+      <div class="loader-bar"><span></span></div>
+      <div class="loader-prompt"><span class="lp-wait">The curtains are about to rise…</span><span class="lp-go">Tap to open the curtains 🌹</span></div>
+    </div>
+  </div>
+  <!-- Animated mesh gradient background -->
+  <div id="meshbg">
+    <div class="mesh-blob"></div>
+    <div class="mesh-blob"></div>
+    <div class="mesh-blob"></div>
+    <div class="mesh-blob"></div>
+    <div class="mesh-blob"></div>
+  </div>
+  <!-- Global floating particles -->
+  <canvas id="globeParticles"></canvas>
+
+  <div id="sprog"></div>
+  <canvas id="sc"></canvas>
+  <canvas id="cfc"></canvas>
+  <div id="cur"></div>
+  <div id="cring"></div>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="hero">
+    <canvas id="hcv"></canvas>
+    <div class="hglow"></div>
+    <div class="hbig l" data-rose></div>
+    <div class="hbig r" data-rose></div>
+    <div class="hbadge">A Rose For Amu</div>
+    <div class="hframe">
+      <div class="hphoto"><img src="ammu di folder/img2.jpg" alt="Amu" /></div>
+      <div class="hwreath" id="hwreath"></div>
+    </div>
+    <h1 class="htitle">Happy Birthday</h1>
+    <div class="hname" id="hname"></div>
+    <p class="hsub">Beautiful like a rose, loved like no other</p>
+    <p class="hmsg">
+      To the girl who is as lovely as her favourite flowers —<br />today every
+      rose in the garden blooms for you, Amu. May this birthday be your most
+      beautiful bloom yet. 🌹
+    </p>
+    <div class="scrollcue"><div class="sbar"></div>scroll</div>
+  </section>
+
+  <!-- ═══ WAVE ═══ -->
+  <div class="wavediv"><canvas id="wcv"></canvas></div>
+
+  <!-- ═══ TICKER ═══ -->
+  <div class="tickbar">
+    <div class="ticktrack" id="ticker"></div>
+  </div>
+
+  <!-- ═══ STATS ═══ -->
+  <section class="statssec">
+    <div class="statsgrid reveal">
+      <div class="statcell">
+        <span class="stati">🎤</span>
+        <div class="statn">One</div>
+        <div class="statl">Voice, Countless Hearts</div>
+      </div>
+      <div class="statcell">
+        <span class="stati">🌟</span>
+        <div class="statn">∞</div>
+        <div class="statl">Memories Together</div>
+      </div>
+      <div class="statcell">
+        <span class="stati">🎂</span>
+        <div class="statn">Today</div>
+        <div class="statl">Belongs to You, Di</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SPARKS SECTION ═══ -->
+  <section class="sparksec">
+    <h2 class="sech reveal">The <em>Stars</em> of Her Story</h2>
+    <p class="secsub reveal d1">Everything that makes Amu, her ✦</p>
+    <div class="chapters">
+      <article class="chap reveal" style="--i:0">
+        <div class="chap-photo"><img src="ammu di folder/img2.jpg" alt="Amu" loading="lazy" /><span class="chap-ico">🎤</span></div>
+        <div class="chap-body"><div class="chap-no">01</div><h3>The Voice That Fills Every Room</h3><p>She doesn't just sing — she transforms the air itself. Every note she carries has warmth, story, and a magic that's entirely hers. In a world full of noise, her voice is the one that makes everyone go quiet and listen.</p></div>
+      </article>
+      <article class="chap reveal" style="--i:1">
+        <div class="chap-photo"><img src="ammu di folder/img6.jpg" alt="Amu" loading="lazy" /><span class="chap-ico">💛</span></div>
+        <div class="chap-body"><div class="chap-no">02</div><h3>Golden Heart</h3><p>Her kindness is never conditional. She gives freely, loves deeply, and cares more than she ever lets on.</p></div>
+      </article>
+      <article class="chap reveal" style="--i:2">
+        <div class="chap-photo"><img src="ammu di folder/img11.jpg" alt="Amu" loading="lazy" /><span class="chap-ico">✨</span></div>
+        <div class="chap-body"><div class="chap-no">03</div><h3>Radiant Presence</h3><p>Wherever she walks, the room brightens. Not because she tries — just because she's her.</p></div>
+      </article>
+      <article class="chap reveal" style="--i:3">
+        <div class="chap-photo"><img src="ammu di folder/img12.jpg" alt="Amu" loading="lazy" /><span class="chap-ico">🌸</span></div>
+        <div class="chap-body"><div class="chap-no">04</div><h3>Quietly Unstoppable</h3><p>She bends but never breaks. Every challenge becomes a verse in her story, and she always finds the chorus again.</p></div>
+      </article>
+      <article class="chap reveal" style="--i:4">
+        <div class="chap-photo"><img src="ammu di folder/img14.jpg" alt="Amu" loading="lazy" /><span class="chap-ico">🎶</span></div>
+        <div class="chap-body"><div class="chap-no">05</div><h3>A Life Set to Music</h3><p>Music isn't just what she does — it's how she thinks, feels, and sees the world. Her entire life has a melody.</p></div>
+      </article>
+      <article class="chap reveal" style="--i:5">
+        <div class="chap-photo"><img src="ammu di folder/img7.jpg" alt="Amu" loading="lazy" /><span class="chap-ico">🌟</span></div>
+        <div class="chap-body"><div class="chap-no">06</div><h3>Born for the Stage</h3><p>The spotlight finds her even when she isn't looking for it. She has that rare quality — a presence that can't be taught, only born. Today we celebrate the one the stage was always made for. Shine on, di. The world is listening. 🌺</p></div>
+      </article>
+    </div>
+  </section>
+
+
+
+  <div class="rosediv"></div>
+  <!-- ═══ ROSE GARDEN ═══ -->
+  <section class="rgsec">
+    <h2 class="sech reveal">The <em>Rose</em> Garden</h2>
+    <p class="secsub reveal d1">Every bloom, a little piece of you 🌹</p>
+    <div class="archgrid reveal d2" id="archgrid"></div>
+  </section>
+
+  <!-- ═══ ROSE REELS ═══ -->
+  <section class="reelsec">
+    <h2 class="sech reveal">Roses <em>&amp;</em> Memories</h2>
+    <p class="secsub reveal d1">Her beautiful moments, in bloom ✦</p>
+    <div class="reel" id="reel1"></div>
+    <div class="reel rev" id="reel2"></div>
+  </section>
+  <div class="rosediv"></div>
+
+  <!-- ═══ LETTER ═══ -->
+  <section class="lettersec">
+    <div class="auroraf">
+      <div class="aura"></div>
+      <div class="aura"></div>
+      <div class="aura"></div>
+      <div class="aura"></div>
+      <div class="aura"></div>
+    </div>
+    <div class="ltrwrap reveal">
+      <div class="seal">♬</div>
+      <div class="lcard">
+        <p class="lsal">My dearest Amu,</p>
+        <div class="lbody">
+          <p>
+            There are some people who don't just live life — they
+            <strong>sing it</strong>. Every story they tell lands like a
+            perfectly placed note; every room they enter fills with a
+            frequency that makes everything feel a little more alive. You are
+            exactly that person.
+          </p>
+          <p>
+            Your voice isn't just something you carry in your throat — it
+            lives in your eyes when you laugh, in your hands when you talk, in
+            the way you make everyone around you feel
+            <strong>heard and held</strong>.
+          </p>
+          <p>
+            On this birthday, I want you to know: you are loved more than any
+            lyric could express, celebrated louder than any chorus, and
+            cherished in all the quiet verses too.
+          </p>
+          <p>
+            May this year be your <strong>magnum opus</strong> — full of
+            music, full of magic, full of everything that makes you,
+            <em>you</em>. 🌸
+          </p>
+        </div>
+        <div class="lsign">With so much love 🌺</div>
+        <div class="lhrt">♥ ♥ ♥</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PETALS OF WISHES ═══ -->
+  <section class="wishsec">
+    <h2 class="sech reveal">Petals of <em>Wishes</em></h2>
+    <p class="secsub reveal d1">Tap a rose to open a wish 🌹</p>
+    <div class="wishgrid reveal d2" id="wishgrid"></div>
+  </section>
+  <div class="rosediv"></div>
+
+  <!-- ═══ SOUND ═══ -->
+  <div class="soundsec">
+    <h3 class="soundh reveal">Every Song She Sings is <em>Magic</em></h3>
+    <p class="sounds reveal d1">🎵 Playing the melody of her life 🎵</p>
+    <canvas id="scv"></canvas>
+  </div>
+
+  <!-- ═══ LIGHTBOX ═══ -->
+  <div class="lb" id="lb">
+    <div class="lbwrap">
+      <button class="lbx" id="lbx">✕</button>
+      <button class="lbbtn lbprev" id="lbprev">‹</button>
+      <img id="lbimg" src="" alt="" />
+      <button class="lbbtn lbnext" id="lbnext">›</button>
+      <div class="lbcnt" id="lbcnt"></div>
+    </div>
+  </div>
+
+  <!-- Background Music -->
+  <audio id="bg-music" src="a.mp3" autoplay loop style="display: none;"></audio>
+  <script src="script.js"></script>
+</body>
+
+</html>
